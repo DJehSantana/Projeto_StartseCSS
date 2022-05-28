@@ -22,3 +22,36 @@ a{
     justify-content: center;
 }
 
+#presentation{
+    background-image: url(public/FundoHome.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+#presentation h1 h2{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: white;
+
+}
+
+#presentation .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: gold;
+    background-color: transparent;
+    border: 2px solid gold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+}
+
+#presentation .cta:hover{
+    color: beige;
+    font-weight: 500;
+    background-color: gold;
+}
