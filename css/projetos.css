@@ -25,7 +25,7 @@
 }
 
 .bg{
-    background-image: linear-gradient(135deg, #f0743f, #d43328, #726cbc, #0d0f0e, #15122e);
+    background-image: linear-gradient(135deg, #e98e39, #b358ddec, #726cbc, #0d0f0e, #15122e);
     position: relative;
 }
 
@@ -103,7 +103,7 @@
     height: 100%;
     width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: 0.7;
+    opacity: 0.3;
 }
 
 #projetos .project-item:hover .project-img img{

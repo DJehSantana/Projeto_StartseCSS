@@ -30,6 +30,15 @@ p {
     letter-spacing: 0.05rem;
 }
 
+footer{
+    font-size: 2rem;    
+    line-height: 2.5rem;
+    padding: 20px;
+    font-weight: 200;
+    text-align: center;
+    background-image: linear-gradient(135deg, #e98e39, #b358ddec, #726cbc);
+    color: white;
+}
 
 .container {
     min-height: 100vh;
@@ -81,6 +90,7 @@ p {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
+    margin-left: 50px;
     margin-top: 20px;
     transition: .3s ease;
     transition-property: background-color, color;
