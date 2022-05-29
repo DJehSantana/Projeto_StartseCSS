@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* elementos basicos da pagina */
+
 html {
     font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -34,39 +36,40 @@ p {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: center;   
 }
 
-.section-title {
-    font-size: 4rem;
-    font-weight: 500;
-    color: darkblue;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-}
-
-h1{
-    text-align: center;
-    justify-content: center;
-}
+/* animações do texto */
 
 #presentation{
     background-image: url(FundoHome.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
+    z-index: 1;
 }
 
-#presentation div{
+#presentation h1{
     display: block;
     width: fit-content;
     font-size: 5rem;
     position: relative;
-    color: white;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
 
+#presentation h1:nth-child(1){
+    animation-delay: 1s;
+}
+
+#presentation h1:nth-child(2){
+    animation-delay: 2s;
+}
+
+#presentation h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3s;
 }
 
 #presentation .cta{
@@ -79,6 +82,8 @@ h1{
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 20px;
+    transition: .3s ease;
+    transition-property: background-color, color;
 }
 
 #presentation .cta:hover{
@@ -87,25 +92,27 @@ h1{
     background-color: gold;
 }
 
-#presentation h1{
+#presentation h1 span{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
-}
-/*
-#presentation h1:nth-child(1){
-    animation-delay: .8s;
-}
-
-#presentation h1:nth-child(2){
-    animation-delay: 1.8s;
+    width: 0%;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+    background-color: gold;
 }
 
-#presentation h1:nth-child(3){
-    animation: text_reveal_name .5s ease forwards;
-    animation-delay: 2.8s;
+#presentation h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+
+#presentation h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+
+#presentation h1:nth-child(3) span{    
+    animation-delay: 2.5s;
 } 
 
 #presentation::after{
@@ -120,8 +127,26 @@ h1{
     z-index: -1;
 }
 
+
+/* keyframes */
+
 @keyframes text_reveal{
     100%{
         color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: gold;
+    }
+}
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;        
+    }
+    100%{
+        width: 0;
+        left: 100%;
     }
 }
