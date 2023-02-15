@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/projetos.css">
-    <title>Projeto Startse</title>
+    <title>Portifólio Jéssica Santana</title>
 </head>
 
 <body>
 
     <section id="presentation">
         <div class="presentation container">
-            <div>
-                <h1>Olá Mundo!<span></span></h1>
-                <h1>Meu nome é<span></span></h1>
-                <h1>Jéssica<span></span></h1>
+            <div class="presentation-text">
+                <h1>Jéssica Santana<span></span></h1>
+                <h1>Back-end<span></span></h1>
+                <h1>Developer<span></span></h1>
             </div>
-            <nav>
+            <nav class="buttons">
+                <a href="#description" type="button" class="cta">Sobre mim</a>
                 <a href="#projetos" type="button" class="cta">Projetos</a>
             </nav>
         </div>
@@ -28,25 +29,41 @@
     <section id="projetos" class="bg">
         <div class="container-column">
 
-            <header class="projetos-header">
-                <h1 class="section-title"><span>Projetos</span></h1>
-            </header>
+
 
             <main>
+                <section id="description">
+                    <figure>
+                        <img src="./public/foto_apresentacao.png" alt="Foto de perfil Jéssica">
+                    </figure>
+                    <div class="description-text"></div>
+                    <h2>Sobre mim</h2>
+                    <p></p>
+
+                </section>
 
                 <section class="all-projects">
+
+                    <h1 class="section-title"><span>Principais Projetos</span></h1>
 
                     <div class="project-item">
 
                         <article class="project-info">
-                            <h1>Projeto 1</h1>
-                            <h2>Aprendendo Lógica de Programação</h2>
-                            <p> Neste projeto desenvolvemos vários algoritmos e fluxogramas baseados em situações do dia
-                                a
-                                dia. Desde uma receita de bolo até um programa simples para calcular a média dos alunos,
-                                aprendemos que a lógica está em tudo o que fazemos e em como solucionamos os problemas
-                                do
-                                dia a dia! </p>
+                            <h2>Decodificador de Textos</h2>
+                            <h3>Aplicação para codificar e decodificar textos</h3>
+                            <p> Este projeto foi desenvolvido durante a formação Programador Iniciante da Turma 4 do
+                                <b>Oracle Next Education</b>. Trata-se de uma aplicação cujo objetivo é codificar e
+                                decodificar textos seguindo uma lógica pré estabelecida.
+                            </p>
+                            <p>Desenvolvi o layout do projeto baseando-me em um modelo do Figma fornecido durante o
+                                curso, porém também coloquei no layout meu toque pessoal. Durante o desenvolvimento do
+                                layout apliquei o conceito de <b>mobile first</b>. A aplicação ficou responsiva tanto
+                                para smartphones, como tablets e desktop. Também adicionei ao projeto a opção de dark
+                                mode.
+                            </p>
+                            <p><b>Tecnologias utilizadas:</b> HTML5 | CSS3 | Javascript</p>
+                            <a href="https://djehsantana.github.io/desafio-criptografia-one/" target="_blank">Link
+                                Decodificador</a>
                         </article>
 
                         <figure class="project-img">
@@ -57,15 +74,18 @@
                     <div class="project-item">
 
                         <article class="project-info">
-                            <h1>Projeto 2</h1>
-                            <h2>Banco de dados SQL</h2>
-                            <p>Este projeto foi criado pensando em uma loja que vende doces. O nome da nossa loja é
-                                Candies.
-                                No banco de dados de nossa loja temos registrados nossos clientes e fornecedores. Também
-                                temos um plano de fidelidade que atribui pontos aos clientes de acordo as compras que
-                                realizam na loja. Nossas compras e vendas ficam muito bem registradas e organizadas em
-                                nosso
-                                Banco de Dados relacional!</p>
+                            <h2>Projeto Store API</h2>
+                            <h3>API para gerenciamento de uma loja</h3>
+                            <p>Projeto back-end desenvolvido durante o Bootcamp de NodeJs da <b>XP Educação</b>. O
+                                projeto conta com uma banco de dados relacional construído com o PostgreSQL, para
+                                cadastro e gerenciamento de produtos, clientes e fornecedores. Também foi incluído um
+                                banco de dados noSQL, criado com o MongoDB, para armazenar a descrição dos produtos.</p>
+                            <p> Na construção da API foram observados os princípios do SOLID e foram utilizados
+                                corretamente os métodos HTTP para requisições e respostas.</p>
+                            <p><b>Tecnologias utilizadas:</b>NodeJs | Javascript | Express | Sequelize | Mongoose |
+                                PostgreSQL | MongoDB</p>
+                            <a href="https://github.com/DJehSantana/projeto-store-api-xp" target="_blank">Link do
+                                Repositório no GitHub</a>
                         </article>
 
                         <figure class="project-img">
@@ -76,30 +96,42 @@
                     <div class="project-item">
 
                         <article class="project-info">
-                            <h1>Projeto 3</h1>
-                            <h2>Aprendendo Html</h2>
-                            <p>Nesse projeto, desenvolvemos um mini site, explorando as tags básicas do HTML. Aprendemos
-                                a
-                                importância das tags metas e das tags semânticas. Também exercitamos boas práticas de
-                                organização de código! </p>
+                            <h2>Gerenciador de Tarefas</h2>
+                            <h3>Aplicação estilo to-do-list</h3>
+                            <p>Projeto Full-Stack de uma poderosa aplicação para cadastro e gerenciamento de tarefas do
+                                dia a dia. A aplicação conta com uma APIRest desenvolvida em NodeJs. Para utilizar a
+                                aplicação o usuário deve cadastrar um login e senha. Após realizar a autenticação de
+                                login o usuário terá acesso ao painel de tarefas, onde poderá cadastrar, atualizar,
+                                deletar e filtrar suas tarefas.</p>
+                            <p>O front-end da aplicação foi desenvolvido em ReactJs, seguindo conceitos de mobile first
+                                e princípios de UX/UI. O repositório da API e do front se encontram em meu <a
+                                    href="https://github.com/DJehSantana" target="_blank">Github</a>.</p>
+                            <p><b>Tecnologias utilizadas:</b> NodeJs | ReactJs | Javascript | Express | JWT | md5 |
+                                Bootstrap | Sass | Mongoose | MongoDB</p>
+                            <a href="https://gerenciador-de-tarefas-djehsantana.netlify.app/" target="_blank">Link da
+                                aplicação</a>
+
                         </article>
 
                         <figure class="project-img">
-                            <img src="public/imgprojeto3.jpg" alt="Imagem HTML">
+                            <img src="public/projeto3.png" alt="Imagem HTML">
                         </figure>
                     </div>
 
                     <div class="project-item">
 
                         <article class="project-info">
-                            <h1>Projeto 4</h1>
-                            <h2>Estilizando com CSS</h2>
-                            <p>Aproveitando o código HTML desenvolvido no projeto anterior, trabalhamos a estilização do
-                                nosso mini site, usando o CSS. Nosso mini site finalmente ganhou vida e cor! Aprendemos
-                                a
-                                centralizar objetos e textos. Também descobrimos muitas coisas legais que podemos fazer
-                                com
-                                o CSS, como as animações que você viu nesse site!</p>
+                            <h2>Microsserviço de Notificações</h2>
+                            <h3>Projeto Back-end em Typescript</h3>
+                            <p>Desenvolvimento de uma API para um serviço de notificações, realizado durante as aulas do
+                                Ignite Lab promovido pela <b>Rocketseat</b>. A API foi desenvolvida com o NestJs,
+                                utilizando
+                                a linguagem Typescript e o SQLite para a criação de um banco de dados relacional.</p>
+                            <p>Durante o desenvolvimento da API também foi utilizado o Jest para elaboração de testes de
+                                integração automatizados. A API foi desenvolvida seguindo os princípios do SOLID.</p>
+                            <p><b>Tecnologias utilizadas: NestJs | Typescript | Jest | Prisma | SQLite</b></p>
+                            <a href="https://github.com/DJehSantana/nodejs-notifications-ignitelab" target="_blank">Link
+                                do Repositório no Github</a>
                         </article>
 
                         <figure class="project-img">
